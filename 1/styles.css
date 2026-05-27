@@ -1,0 +1,104 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)),  url('newpaper.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+.newsletter {
+
+background: rgba(255, 255, 255, 0.08);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(255, 255, 255, 0.15);
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+padding: 20px;
+border-radius: 40px;
+width: 90%;
+max-width: 400px;
+}
+
+h1{
+    text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+label{  
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+input {
+    
+    padding: 18px 22px;
+    font-size: 1.08rem;
+    background: rgba(255, 255, 255, 0.95);
+    color: #222;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 10px 0 10px 0;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 5px rgba(59, 130, 246, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Button */
+button {
+    padding: 18px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.4);
+    background: green;
+    color: black;
+}
+
+/* Message */
+#message {
+    margin-top: 10px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    min-height: 28px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .newsletter {
+        padding: 45px 30px;
+    }
+    .newsletter h1 {
+        font-size: 2.3rem;
+    }
+}
